@@ -1,3 +1,15 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+artistlist:
+    path: /artists
+    controller: App\Controller\ArtistController::index
+
+artist:
+    path: /artists/{token}
+    controller: App\Controller\ArtistController::getOne
+
+album:
+    path: /albums/{token}
+    controller: App\Controller\AlbumController::getOne
